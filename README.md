@@ -29,7 +29,7 @@ home
 
 Now we are ready to set up the Arduino environment.
 
-###Setting up Arduino
+### Setting up Arduino
 
 We first have to download the [Arduino's software](http://www.intel.la/content/www/xl/es/support/boards-and-kits/intel-galileo-boards/000021501.html) released by Intel to work with their boards like Galileo and Edison. You can choose the latest version of the IDE and also you can find useful software inside for the board.
 
@@ -44,7 +44,7 @@ The sensors are the following:
 * SCT-013-000 - Electric current sensor
 
 Once we installed the libraries, now we have to configure the `MQTT_PlugPlay.ino` file. There are different constants used for timing the readings of sensors, but the last release doesn't use them because we integrated the energy sensor which requires the less possible delay. So, in order to make them work, we would have to adjust these variables to **seconds**. If you wish to light be read in one minute, `TIME_LIGHT` should be *60*.
-If you are testing this script for first time in Arduino's IDE, make sure that `DEBUG` is set to 1 so you can watch all information in console. But is quite *IMPORTANT* that you set this constant to 0 if you are about to release the board, so the Serial communication will not crash.
+If you are testing this script for first time in Arduino's IDE, make sure that `DEBUG` is set to 1 so you can watch all information in console. But is quite **IMPORTANT** that you set this constant to 0 if you are about to release the board, so the Serial communication will not crash.
 The LED constants just tell you which digital pins are you going to use.
 The `CURRENT_PIN` is the Analog pin for the energy sensor.
 The `NOISE_PIN` is the Analog pin for the noise sensor.
